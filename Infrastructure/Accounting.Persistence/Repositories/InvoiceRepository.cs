@@ -1,12 +1,8 @@
 ﻿using Accounting.Application.Interfaces;
 using Accounting.Application.Interfaces.Repositories;
 using Accounting.Domain.Entites;
-using Accounting.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Accounting.Persistence.Repositories
@@ -19,38 +15,39 @@ namespace Accounting.Persistence.Repositories
         {
             this.context = context;
         }
-        public void AddInvoice(Invoice invoice)
+        public async Task<Invoice> AddInvoiceAsync(Invoice invoice)
         {
             context.Invoices.Add(invoice);
-            context.SaveChanges();
+            await context.SaveChangesAsync();
+            return invoice;
         }
 
-        public void DeleteInvoice(int id)
+        public async Task DeleteInvoiceAsync(int id)
         {
-            Invoice invoice = GetInvoiceById(id);
-            DeleteInvoice(invoice);
+            Invoice invoice = await GetInvoiceByIdAsync(id);
+            await DeleteInvoiceAsync(invoice);
         }
 
-        public void DeleteInvoice(Invoice invoice)
+        public async Task DeleteInvoiceAsync(Invoice invoice)
         {
             context.Invoices.Remove(invoice);
-            context.SaveChanges();
+            await context.SaveChangesAsync();
         }
 
-        public Invoice GetInvoiceById(int id)
+        public async Task<Invoice> GetInvoiceByIdAsync(int id)
         {
-            return context.Invoices.Where(i => i.Id == id).FirstOrDefault();
+            return await context.Invoices.FindAsync(id);
         }
 
-        public IList<Invoice> GetInvoices()
+        public async Task<IList<Invoice>> GetAllInvoicesAsync()
         {
-            return context.Invoices.ToList();
+            return await context.Invoices.ToListAsync();
         }
 
-        public void UpdateInvoice(Invoice invoice)
+        public async Task UpdateInvoiceAsync(Invoice invoice)
         {
-            context.Invoices.Update(invoice);
-            context.SaveChanges();
+            context.Invoices.Update(invoice); 
+            await context.SaveChangesAsync();
         }
     }
 }

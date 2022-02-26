@@ -1,4 +1,5 @@
 using Accounting.Application;
+using Accounting.JwtSecurity;
 using Accounting.Persistence;
 using Accounting.Persistence.Context;
 using Microsoft.AspNetCore.Builder;
@@ -36,6 +37,8 @@ namespace Accounting.WebApi
             services.AddPersistenceRegistration(Configuration);
 
             services.AddApplicationRegistration();
+
+            services.AddJwtSecurityRegistration(Configuration);
 
             services.AddSwaggerGen(c =>
             {

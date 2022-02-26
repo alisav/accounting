@@ -14,11 +14,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Accounting.Application\Accounting.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Accounting.JWTSecurity\Accounting.JwtSecurity.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Accounting.Persistence\Accounting.Persistence.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

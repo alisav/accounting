@@ -1,5 +1,6 @@
 ﻿using Accounting.Application.Interfaces;
 using Accounting.Domain.Entites;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Accounting.Persistence.Context
 {
-    public class AccountingDbContext: DbContext, IAccountingDbContext
+    public class AccountingDbContext: IdentityDbContext<ApplicationUser>, IAccountingDbContext
     {
         public AccountingDbContext(DbContextOptions<AccountingDbContext> options)
             : base(options)
@@ -21,6 +22,7 @@ namespace Accounting.Persistence.Context
         public DbSet<Product> Products { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<InvoiceItem> InvoiceItems { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

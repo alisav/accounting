@@ -1,13 +1,10 @@
 ﻿using Accounting.Application.Interfaces;
+using Accounting.Domain.Entites;
 using Accounting.Persistence.Context;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Accounting.Persistence
 {
@@ -19,6 +16,15 @@ namespace Accounting.Persistence
               opt.UseSqlServer(config.GetConnectionString("AccountingConnection"))
               .EnableSensitiveDataLogging()
               .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+
+            services.AddIdentity<ApplicationUser, IdentityRole>(opt =>
+            {
+                opt.Password.RequiredLength = 4;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequireLowercase = false;
+                opt.Password.RequireUppercase = false;
+                opt.Password.RequireDigit = false;
+            }).AddDefaultTokenProviders().AddEntityFrameworkStores<AccountingDbContext>();
 
             services.AddScoped<IAccountingDbContext>(provider => provider.GetService<AccountingDbContext>());
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Accounting.Application.ViewModels
+namespace Accounting.Application.Responses
 {
     public class ProductResponse
     {

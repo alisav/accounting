@@ -26,7 +26,7 @@ namespace Accounting.JwtSecurity
                     };
                 });
 
-            services.AddScoped<IJwtGenerator, JwtGenerator>();
+            services.AddScoped<ITokenGenerator, JwtGenerator>();
         }
     }
 }

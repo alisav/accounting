@@ -2,7 +2,7 @@
 
 namespace Accounting.Application.Interfaces.Security
 {
-    public interface IJwtGenerator
+    public interface ITokenGenerator
     {
         string CreateToken(ApplicationUser user);
     }

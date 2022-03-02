@@ -10,7 +10,7 @@ using System.Text;
 
 namespace Accounting.JwtSecurity.Security
 {
-    public class JwtGenerator : IJwtGenerator
+    public class JwtGenerator : ITokenGenerator
     {
         private readonly SymmetricSecurityKey _key;
 

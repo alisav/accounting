@@ -9,15 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{22D1D865-0150-4D5D-9F98-5CF530AE80FD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounting.Domain", "Core\Accounting.Domain\Accounting.Domain.csproj", "{3A7189A3-38E9-477E-949B-F3C2113FB93B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Domain", "Core\Accounting.Domain\App.Domain.csproj", "{3A7189A3-38E9-477E-949B-F3C2113FB93B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounting.Application", "Core\Accounting.Application\Accounting.Application.csproj", "{A3CAE442-2A3E-4216-9C10-001713FCCCDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Application", "Core\Accounting.Application\App.Application.csproj", "{A3CAE442-2A3E-4216-9C10-001713FCCCDD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounting.Persistence", "Infrastructure\Accounting.Persistence\Accounting.Persistence.csproj", "{F3AC3229-09FE-4AC8-A517-A46C0595FA07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Persistence", "Infrastructure\Accounting.Persistence\App.Persistence.csproj", "{F3AC3229-09FE-4AC8-A517-A46C0595FA07}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounting.WebApi", "WebApi\Accounting.WebApi\Accounting.WebApi.csproj", "{6F311B2A-A906-493E-9BF0-783643E7B441}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.WebApi", "WebApi\Accounting.WebApi\App.WebApi.csproj", "{6F311B2A-A906-493E-9BF0-783643E7B441}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting.JwtSecurity", "Infrastructure\Accounting.JWTSecurity\Accounting.JwtSecurity.csproj", "{A4A79B20-9CBE-4B5F-B428-C17721BCB820}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.JwtSecurity", "Infrastructure\Accounting.JWTSecurity\App.JwtSecurity.csproj", "{A4A79B20-9CBE-4B5F-B428-C17721BCB820}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

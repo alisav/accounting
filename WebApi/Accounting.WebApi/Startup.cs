@@ -1,7 +1,7 @@
-using Accounting.Application;
-using Accounting.JwtSecurity;
-using Accounting.Persistence;
-using Accounting.Persistence.Context;
+using App.Application;
+using App.JwtSecurity;
+using App.Persistence;
+using App.Persistence.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -17,7 +17,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Accounting.WebApi
+namespace App.WebApi
 {
     public class Startup
     {
@@ -42,7 +42,7 @@ namespace Accounting.WebApi
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Accounting.WebApi", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "App.WebApi", Version = "v1" });
             });
         }
 
@@ -53,7 +53,7 @@ namespace Accounting.WebApi
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Accounting.WebApi v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "App.WebApi v1"));
             }
 
             app.UseHttpsRedirection();

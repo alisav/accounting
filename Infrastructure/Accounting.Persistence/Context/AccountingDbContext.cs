@@ -1,5 +1,5 @@
-﻿using Accounting.Application.Interfaces;
-using Accounting.Domain.Entites;
+﻿using App.Application.Interfaces;
+using App.Domain.Entites;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Accounting.Persistence.Context
+namespace App.Persistence.Context
 {
     public class AccountingDbContext: IdentityDbContext<ApplicationUser>, IAccountingDbContext
     {

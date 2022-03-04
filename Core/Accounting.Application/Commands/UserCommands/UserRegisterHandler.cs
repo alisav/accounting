@@ -1,14 +1,14 @@
-﻿using Accounting.Application.Interfaces.Repositories;
-using Accounting.Application.Interfaces.Services;
-using Accounting.Application.Responses;
-using Accounting.Domain.Entites;
+﻿using App.Application.Interfaces.Repositories;
+using App.Application.Interfaces.Services;
+using App.Application.Responses;
+using App.Domain.Entites;
 using AutoMapper;
 using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Accounting.Application.Commands.UserCommands
+namespace App.Application.Commands.UserCommands
 {
     public class UserRegisterHandler : IRequestHandler<UserRegisterCommand, UserResponse>
     {

@@ -1,11 +1,11 @@
-﻿using Accounting.Application.Interfaces;
-using Accounting.Application.Interfaces.Repositories;
-using Accounting.Domain.Entites;
+﻿using App.Application.Interfaces;
+using App.Application.Interfaces.Repositories;
+using App.Domain.Entites;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Accounting.Persistence.Repositories
+namespace App.Persistence.Repositories
 {
     class InvoiceRepository : IInvoiceRepository
     {

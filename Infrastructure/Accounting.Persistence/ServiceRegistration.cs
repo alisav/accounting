@@ -1,12 +1,12 @@
-﻿using Accounting.Application.Interfaces;
-using Accounting.Domain.Entites;
-using Accounting.Persistence.Context;
+﻿using App.Application.Interfaces;
+using App.Domain.Entites;
+using App.Persistence.Context;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Accounting.Persistence
+namespace App.Persistence
 {
     public static class ServiceRegistration
     {

@@ -1,6 +1,6 @@
-﻿using Accounting.Domain.Entites;
+﻿using App.Domain.Entites;
 
-namespace Accounting.Application.Interfaces.Security
+namespace App.Application.Interfaces.Security
 {
     public interface ITokenGenerator
     {

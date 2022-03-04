@@ -1,9 +1,9 @@
-﻿using Accounting.Application.Commands.InvoiceCommands;
-using Accounting.Application.Responses;
-using Accounting.Domain.Entites;
+﻿using App.Application.Commands.InvoiceCommands;
+using App.Application.Responses;
+using App.Domain.Entites;
 using AutoMapper;
 
-namespace Accounting.Application.Mapping
+namespace App.Application.Mapping
 {
     class MappingProfile: Profile
     {

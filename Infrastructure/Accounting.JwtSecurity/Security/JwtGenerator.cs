@@ -1,5 +1,5 @@
-﻿using Accounting.Application.Interfaces.Security;
-using Accounting.Domain.Entites;
+﻿using App.Application.Interfaces.Security;
+using App.Domain.Entites;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -8,7 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Accounting.JwtSecurity.Security
+namespace App.JwtSecurity.Security
 {
     public class JwtGenerator : ITokenGenerator
     {

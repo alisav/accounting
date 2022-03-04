@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Accounting.Application.Wrappers
+namespace App.Application.Wrappers
 {
     public class PagedResponse<T>: ServiceResponse<T>
     {

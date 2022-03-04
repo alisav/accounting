@@ -1,14 +1,14 @@
-﻿using Accounting.Application.Interfaces;
-using Accounting.Application.Interfaces.Repositories;
-using Accounting.Application.Responses;
-using Accounting.Domain.Entites;
+﻿using App.Application.Interfaces;
+using App.Application.Interfaces.Repositories;
+using App.Application.Responses;
+using App.Domain.Entites;
 using AutoMapper;
 using MediatR;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Accounting.Application.Commands.InvoiceCommands
+namespace App.Application.Commands.InvoiceCommands
 {
     public class InvoiceCreateHandler : IRequestHandler<InvoiceCreateCommand, InvoiceResponse>
     {

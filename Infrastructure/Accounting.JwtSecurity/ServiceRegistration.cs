@@ -1,12 +1,12 @@
-﻿using Accounting.Application.Interfaces.Security;
-using Accounting.JwtSecurity.Security;
+﻿using App.Application.Interfaces.Security;
+using App.JwtSecurity.Security;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-namespace Accounting.JwtSecurity
+namespace App.JwtSecurity
 {
     public static class ServiceRegistration
     {

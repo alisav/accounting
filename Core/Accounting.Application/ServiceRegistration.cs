@@ -1,12 +1,12 @@
-﻿using Accounting.Application.Mapping;
-using Accounting.Application.PipelineBehaviours;
+﻿using App.Application.Mapping;
+using App.Application.PipelineBehaviours;
 using AutoMapper;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace Accounting.Application
+namespace App.Application
 {
     public static class ServiceRegistration
     {

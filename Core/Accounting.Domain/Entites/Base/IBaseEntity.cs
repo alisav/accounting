@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Accounting.Domain.Entites.Base
+namespace App.Domain.Entites.Base
 {
     public interface IBaseEntity
     {

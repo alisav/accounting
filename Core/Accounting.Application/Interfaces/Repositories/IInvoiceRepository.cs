@@ -1,8 +1,8 @@
-﻿using Accounting.Domain.Entites;
+﻿using App.Domain.Entites;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Accounting.Application.Interfaces.Repositories
+namespace App.Application.Interfaces.Repositories
 {
     public interface IInvoiceRepository
     {

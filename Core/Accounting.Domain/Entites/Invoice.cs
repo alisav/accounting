@@ -1,8 +1,8 @@
-﻿using Accounting.Domain.Entites.Base;
+﻿using App.Domain.Entites.Base;
 using System;
 using System.Collections.Generic;
 
-namespace Accounting.Domain.Entites
+namespace App.Domain.Entites
 {
     public class Invoice : Entity
     {

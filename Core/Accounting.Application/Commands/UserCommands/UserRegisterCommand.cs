@@ -1,7 +1,7 @@
-﻿using Accounting.Application.Responses;
+﻿using App.Application.Responses;
 using MediatR;
 
-namespace Accounting.Application.Commands.UserCommands
+namespace App.Application.Commands.UserCommands
 {
     public class UserRegisterCommand : IRequest<UserResponse>
     {

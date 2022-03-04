@@ -1,5 +1,5 @@
-﻿using Accounting.Application.Interfaces.Services;
-using Accounting.Domain.Entites;
+﻿using App.Application.Interfaces.Services;
+using App.Domain.Entites;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Accounting.Application.Services
+namespace App.Application.Services
 {
     public class UserService : IUserService
     {

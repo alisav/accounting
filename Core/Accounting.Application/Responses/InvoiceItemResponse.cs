@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Accounting.Application.Responses
+namespace App.Application.Responses
 {
     public class InvoiceItemResponse
     {

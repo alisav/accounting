@@ -1,12 +1,12 @@
-﻿using Accounting.Application.Commands.InvoiceCommands;
-using Accounting.Application.Responses;
+﻿using App.Application.Commands.InvoiceCommands;
+using App.Application.Responses;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Accounting.WebApi.Controllers
+namespace App.WebApi.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]

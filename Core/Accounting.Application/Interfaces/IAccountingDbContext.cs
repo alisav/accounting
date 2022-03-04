@@ -1,4 +1,4 @@
-﻿using Accounting.Domain.Entites;
+﻿using App.Domain.Entites;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Accounting.Application.Interfaces
+namespace App.Application.Interfaces
 {
     public interface IAccountingDbContext
     {

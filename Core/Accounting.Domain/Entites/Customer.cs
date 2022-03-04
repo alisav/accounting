@@ -1,7 +1,7 @@
-﻿using Accounting.Domain.Entites.Base;
+﻿using App.Domain.Entites.Base;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Accounting.Domain.Entites
+namespace App.Domain.Entites
 {
     public class Customer : Entity
     {

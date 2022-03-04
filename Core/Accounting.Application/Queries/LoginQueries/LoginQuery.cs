@@ -1,10 +1,10 @@
-﻿using Accounting.Application.Responses;
-using Accounting.Domain.Entites;
+﻿using App.Application.Responses;
+using App.Domain.Entites;
 using MediatR;
 using System;
 using System.Collections.Generic;
 
-namespace Accounting.Application.Queries.LoginQueries
+namespace App.Application.Queries.LoginQueries
 {
     public class LoginQuery : IRequest<LoginResponse>
     {

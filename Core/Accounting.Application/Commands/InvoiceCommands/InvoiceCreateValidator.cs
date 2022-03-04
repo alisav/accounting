@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Accounting.Application.Commands.InvoiceCommands
+namespace App.Application.Commands.InvoiceCommands
 {
     public class InvoiceCreateValidator : AbstractValidator<InvoiceCreateCommand>
     {

@@ -27,7 +27,7 @@ namespace App.Application.Queries.LoginQueries
             if (userEntity == null)
                 throw new ApplicationException("Entity could not be mapped!");
 
-            var user = await _userService.CreateAsync(userEntity, request.Password);
+            var user = await _userService.LoginAsync(userEntity, request.Password);
             var userResponse = _mapper.Map<LoginResponse>(user);
             return userResponse;
         }
